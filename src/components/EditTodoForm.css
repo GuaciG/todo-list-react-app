@@ -1,0 +1,116 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+.error-div, .success-div {
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    margin: 1rem 0.9rem 0 0.9rem;
+    width: 90%;
+    border-radius: 5px;
+    color: red;
+    background-color: rgba(255, 8, 0, 0.3);
+}
+
+.success-div {
+    color: rgb(34, 114, 2);
+    background-color: rgba(3, 209, 54, 0.3);
+}
+
+.form-div {
+    margin: 1rem 0rem;
+    padding: 0rem 1rem 0rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-input, 
+.todo-button {
+    padding: 0.4rem 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #fff; 
+    outline: none; 
+}
+
+.todo-input {
+    width: 70%;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.todo-input::placeholder {
+    color: #028575;
+}
+
+.todo-button {
+    color: #fff;
+    font-weight: bold;
+    background-color: #028575;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 25%;
+    border-radius: 5px; 
+}
+
+.todo-button:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.select-div {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #028575;
+}
+
+.filter-todo {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: rgba(2, 133, 117, 0.6);
+    width: 100%;
+    cursor: pointer;
+    padding: 0.4rem 0.5rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; 
+    background-color: rgba(153, 153, 153, 0.3);  
+    border-radius: 5px;
+    line-height: 1.2;
+}
+
+.select-div::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.4rem 0.5rem;
+    background-color: #028575;
+    margin: 0rem 1rem 0rem 0rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border-radius: 0 5px 5px 0;
+    line-height: 1.2;
+    max-height: 32px;
+}
+
+.select-div:hover::after {
+    background-color: #666;
+    color: #fff;
+}
+
+
+
+
+ 

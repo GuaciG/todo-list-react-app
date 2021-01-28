@@ -1,0 +1,69 @@
+/* todo styles */
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #fff;
+    color: #333;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, 
+.complete-btn,
+.edit-btn {
+    border: none;
+    cursor: pointer; 
+    outline: none;   
+}
+
+.complete-btn {
+    background-color: #fff;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid rgba(153, 153, 153, 0.7);
+    padding: 0.3rem 0.4rem;
+    margin-left: 0.4rem;
+    font-size: 0.6rem;
+}
+
+.edit-btn {
+    background-color: #fff;
+    color:  #028575;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.trash-btn {
+    background-color: #fff;
+    color: #e64615;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+   pointer-events: none; 
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.done {
+    background-color: #03d136;
+    color: #fff;
+    border: none;
+}
