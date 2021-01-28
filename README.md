@@ -47,6 +47,6 @@ npm start
 
 You can take a look at this project in [github](https://guacig.github.io/todo-list-react-app/)
 
-Also you can find the working demo in [codepen]()
+
 
 Feedback issues etc. are more than welcome! Thanks!
